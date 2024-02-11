@@ -1,10 +1,12 @@
+/* Global Styles */
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Body Styles */
+body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     color: #333;
     padding: 0;
     margin: 0 auto;
@@ -14,9 +16,10 @@
     grid-template-rows: minmax(75px, 100px) 1fr 80px;
     justify-items: center;
     position: relative;
-  }
-  
-  main {
+}
+
+/* Main Content Styles */
+main {
     width: 90%;
     max-width: 1600px;
     display: grid;
@@ -24,132 +27,169 @@
     align-items: start;
     gap: 1rem;
     margin: 20px 0;
-  }
-  
-  .left,
-  .right {
+}
+
+.left,
+.right {
     grid-column: span 3;
     position: sticky;
     top: 120px;
-  }
-  
-  .middle {
+}
+
+.middle {
     grid-column: span 6;
-  }
-  
-  /* Header and Footer Styles */
-  header,
-  footer {
+}
+
+/* Header and Footer Styles */
+header,
+footer {
     text-align: center;
-    background-color: #4a90e2; 
+    background-color: #4a90e2;
     color: #fff;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  header {
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 100;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin: 0;
-  }
-  
-  header p {
+}
+
+header p {
     margin: 10px 0;
-  }
-  
-  /* Navigation Styles */
-  nav {
-    background-color: #4a90e2; 
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #4a90e2;
     color: #fff;
     border-radius: 20px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     padding: 20px;
-  }
-  
-  nav li {
+}
+
+nav li {
     margin: 10px 0;
     font-size: 1.25rem;
-  }
-  
-  a {
-    color: #2d3a4b; 
+}
+
+a {
+    color: #2d3a4b;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  /* Section Styles */
-  section {
+}
+
+/* Section Styles */
+section {
     max-width: 1200px;
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
     grid-column: span 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #2d3a4b; 
-  }
-  
-  .review {
+}
+
+h2 {
+    color: #2d3a4b;
+    font-size: 1.75rem;
+}
+
+.review {
     border-bottom: 1px solid #666;
     padding-bottom: 15px;
     margin-bottom: 15px;
-  }
-  
-  /* Media Query for Small Screens */
-  @media only screen and (max-width: 768px) {
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+label {
+    color: #2d3a4b;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #2d3a4b;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1f2a38;
+}
+
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
     header p {
-      display: none;
-      visibility: hidden;
+        display: none;
+        visibility: hidden;
     }
-  
+
     main {
-      margin-top: 0;
+        margin-top: 0;
     }
-  
+
     .left,
     .right,
     .middle {
-      grid-column: span 12;
+        grid-column: span 12;
     }
-  
+
     .left {
-      top: 100px;
-      border-radius: 0;
-      z-index: 100;
+        top: 100px;
+        border-radius: 0;
+        z-index: 100;
     }
-  
+
     nav {
-      margin-left: calc(-5% - 10px);
-      margin-right: calc(-5% - 10px);
-      padding-left: calc(5% + 10px);
-      padding-right: calc(5% + 10px);
+        margin-left: calc(-5% - 10px);
+        margin-right: calc(-5% - 10px);
+        padding-left: calc(5% + 10px);
+        padding-right: calc(5% + 10px);
     }
-  
+
     nav ul {
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
     }
-  
+
     nav li {
-      margin: 5px;
+        margin: 5px;
     }
-  }
-  
+}
