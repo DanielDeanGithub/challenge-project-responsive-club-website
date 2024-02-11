@@ -21,6 +21,7 @@ main {
     grid-template-columns: repeat(12, 1fr);
     align-items: start;
     gap: 1rem;
+    margin: 20px 0;
 }
 
 .left {
@@ -54,7 +55,32 @@ header p {
     margin: 10px 0;
 }
 
+/* Nav */
+nav {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10%;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 
 
