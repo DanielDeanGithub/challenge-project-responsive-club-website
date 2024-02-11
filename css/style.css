@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 1fr 80px;
+    grid-template-rows: minmax(75px, 150px) 1fr 80px;
     justify-items: center;
     position: relative;
 }
@@ -42,18 +42,12 @@ main {
 /* Header */
 header, footer {
     text-align: center;
-    padding: 20px;
     background-color: #333;
     color: #fff;
     width: 100%;
-}
-
-header {
-    align-self: flex-start;
-}
-
-footer {
-    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
