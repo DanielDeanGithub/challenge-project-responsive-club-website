@@ -18,4 +18,18 @@ main {
     width: 90%;
     max-width: 1600px;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.left {
+    grid-column: span 3;
+}
+
+.main {
+    grid-column: span 6;
+}
+
+.right {
+    grid-column: span 3;
 }
