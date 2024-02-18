@@ -1,8 +1,8 @@
+#### Objective provided by Codecademy
+
 ### WEB DEVELOPMENT FOUNDATIONS
 
 # Challenge Project: Responsive Club Website
-
-#### Objective provided by Codecademy:
 
 # Overview
 
